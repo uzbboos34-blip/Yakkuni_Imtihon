@@ -1,0 +1,26 @@
+2026-01-30 18:05:36 error: branches validation failed: address: Path `address` is required.
+2026-01-30 18:08:23 error: branches validation failed: address: Path `address` is required.
+2026-01-30 18:08:55 error: branches validation failed: address: Path `address` is required.
+2026-01-31 11:05:03 error: transportModel is not defined
+2026-01-31 11:07:26 error: transports validation failed: price: Cast to Number failed for value "1769839646632.jpg" (type string) at path "price", img: Path `img` is required.
+2026-01-31 11:08:33 error: transports validation failed: price: Cast to Number failed for value "1769839713639.jpg" (type string) at path "price", img: Path `img` is required.
+2026-01-31 11:16:11 error: AuthService is not defined
+2026-01-31 11:17:37 error: staffs validation failed: branch: Cast to ObjectId failed for value "AvtoSalon" (type string) at path "branch" because of "BSONError"
+2026-01-31 11:34:11 error: passCompare is not defined
+2026-01-31 15:04:21 error: Cannot read properties of undefined (reading 'name')
+2026-01-31 16:53:49 error: Cannot read properties of undefined (reading 'rowCount')
+2026-01-31 16:55:00 error: Cannot read properties of undefined (reading 'rowCount')
+2026-01-31 17:03:39 error: Cannot read properties of undefined (reading 'role')
+2026-01-31 17:09:30 error: staffService is not defined
+2026-01-31 17:19:10 error: Cannot read properties of undefined (reading 'length')
+2026-01-31 17:20:54 error: jwt malformed
+2026-01-31 18:21:09 error: Cast to string failed for value "[ 'GET', 'POST' ]" (type Array) at path "actions"
+2026-01-31 19:52:30 error: user is not defined
+2026-01-31 19:52:41 error: user is not defined
+2026-01-31 19:53:15 error: user is not defined
+2026-01-31 21:52:14 error: agent is not defined
+2026-01-31 22:24:28 error: fs is not defined
+2026-01-31 22:24:40 error: fs is not defined
+2026-01-31 22:25:16 error: Cannot access 'data' before initialization
+2026-01-31 22:26:14 error: Cannot access 'data' before initialization
+2026-01-31 22:26:38 error: Assignment to constant variable.
