@@ -11,9 +11,9 @@ export default async(req, res, next) =>{
             const authHeader = req.headers.authorization;
             const userAgent = req.headers["user-agent"]
             const agent = fs.readFileSync(join(process.cwd(), "src", "database", "agent.json"), "utf-8")
-            const res = JSON.parse(agent) || []
+            const temp = JSON.parse(agent) || []            
             
-            if (!userAgent == res.userAgent) {
+            if (!(userAgent == temp.userAgent)) {
                 throw new UnauthorizedError(401, "Sizda ruxsat yo'q");
             }
             

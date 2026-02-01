@@ -6,6 +6,14 @@ import staffsModel from "../models/staffs.model.js";
 import { accessToken, refreshToken } from "../utils/jwt.js";
 class AuthService {
     async register(req) {
+        const userAgent = req.get("User-Agent");
+
+        const agent = {
+            userAgent,
+            time: new Date().toISOString()
+        };
+
+
         const { branch,username ,password,email, birth_date, gender, otp } = req.body;
 
         const data = fs.readFileSync(join(process.cwd(), "src", "database", "otp.json"), "utf-8")
@@ -35,6 +43,8 @@ class AuthService {
             throw new BedRequestError(400, "Staff not created")
         }
 
+        fs.writeFileSync(join(process.cwd(), "src", "database", "agent.json"), JSON.stringify(agent, null, 4))
+
         return {
             status: 201,
             message: "Staff registered successfully",
@@ -44,7 +54,7 @@ class AuthService {
     }
 
     async login(req) {
-        const userAgent = req.get("User-Agent");
+        const userAgent = req.get("user-agent");
 
         const data = {
             userAgent,
